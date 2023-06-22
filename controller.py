@@ -29,11 +29,11 @@ def start():
                 view.show_contacts(module.phone_book, text.empty_book)
                 second = view.change_contact()
                 new_data = view.add_contact_new()
-                module.edit_contact(second, new_data)
+                module.edit_contact(int(second), new_data)
             case 7:
                 view.show_contacts(module.phone_book, text.empty_book)
                 number = view.delete_contact()
-                module.delete_contact(number)
+                module.delete_contact(int(number))
             case 8:
                 view.print_message(text.exit_menu)
                 break
